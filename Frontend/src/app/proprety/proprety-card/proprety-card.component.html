@@ -1,10 +1,19 @@
 <div class="card">
-  <img class="propImg" src="assets/images/house_default.jpg" />
-  <div class="card-body p-2">
+  <div class="card-img-wrapper">
+    <img class="card-img-top" src="assets/images/house_default.jpg" />
+    <ul class="list-inline text-center member-icons animate" >
+      <li class="list-inline-item" >
+        <a class="btn card-icon-by"><i class="fa-solid fa-pen"></i></a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn card-icon"><i class="fa-solid fa-heart"></i> </a>
+      </li>
+    </ul>
+  </div>
 
+  <div class="card-body p-2">
     <h1>{{property.Name}}</h1>
     <h2>{{property.Type}}</h2>
     <h3>{{property.Price}}</h3>
-
   </div>
 </div>
