@@ -1,5 +1,5 @@
 
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component(
   {
@@ -11,10 +11,6 @@ import { Component } from "@angular/core";
   }
 )
 export class PropretyCardComponent {
-  Proprety:any =  {
-    "Id":1,
-    "Name":"New Balance 530",
-    "Type":"House",
-    "Price":14200
-  }
+ @Input() property : any
+
 }
